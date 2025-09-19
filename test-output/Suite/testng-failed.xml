@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" verbose="10">
+  <test thread-count="5" name="Sub test1(failed)" verbose="10">
+    <parameter name="fileName" value="HonorHealth_ImplementationDataExport"/>
+    <parameter name="clientName" value="HonorHealth"/>
+    <parameter name="testCaseName" value="HonorHealth_ImplementationDataExport"/>
+    <classes>
+      <class name="com.optum.rxcomet.tests.ImplementationTest">
+        <methods>
+          <include name="headerTest"/>
+        </methods>
+      </class> <!-- com.optum.rxcomet.tests.ImplementationTest -->
+    </classes>
+  </test> <!-- Sub test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->

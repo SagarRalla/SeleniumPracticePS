@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-09-19T12:52:44 IST" name="Suite" finished-at="2025-09-19T12:53:40 IST" duration-ms="56061">
+    <groups>
+    </groups>
+    <test started-at="2025-09-19T12:52:44 IST" name="Test" finished-at="2025-09-19T12:52:44 IST" duration-ms="7">
+    </test> <!-- Test -->
+    <test started-at="2025-09-19T12:52:44 IST" name="Sub test1" finished-at="2025-09-19T12:53:40 IST" duration-ms="55998">
+      <class name="com.optum.rxcomet.tests.ImplementationTest">
+        <test-method is-config="true" signature="reportSetup()[pri:0, instance:com.optum.rxcomet.tests.ImplementationTest@fd8294b]" started-at="2025-09-19T12:52:43 IST" name="reportSetup" finished-at="2025-09-19T12:52:44 IST" duration-ms="241" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportSetup -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.optum.rxcomet.tests.ImplementationTest@fd8294b]" started-at="2025-09-19T12:52:44 IST" name="setup" finished-at="2025-09-19T12:53:18 IST" duration-ms="34771" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[HonorHealth_ImplementationDataExport]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="headerTest(java.lang.String,java.lang.String)[pri:0, instance:com.optum.rxcomet.tests.ImplementationTest@fd8294b]" started-at="2025-09-19T12:53:18 IST" name="headerTest" finished-at="2025-09-19T12:53:38 IST" duration-ms="19314" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[HonorHealth]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[HonorHealth_ImplementationDataExport]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- headerTest -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.optum.rxcomet.tests.ImplementationTest@fd8294b]" started-at="2025-09-19T12:53:38 IST" name="quitBrowser" finished-at="2025-09-19T12:53:40 IST" duration-ms="1906" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+        <test-method is-config="true" signature="endReport()[pri:0, instance:com.optum.rxcomet.tests.ImplementationTest@fd8294b]" started-at="2025-09-19T12:53:40 IST" name="endReport" finished-at="2025-09-19T12:53:40 IST" duration-ms="355" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+      </class> <!-- com.optum.rxcomet.tests.ImplementationTest -->
+    </test> <!-- Sub test1 -->
+  </suite> <!-- Suite -->
+</testng-results>

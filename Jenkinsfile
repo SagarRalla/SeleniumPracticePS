@@ -31,7 +31,7 @@ pipeline {
                         Project: ${env.JOB_NAME}
                         Build Number: ${env.BUILD_NUMBER}
                         Check console output at: ${env.BUILD_URL}""",
-                to: "recipient@example.com",
+                to: "sagarralla14@gmail.com",
                 attachLog: true
             )
         }

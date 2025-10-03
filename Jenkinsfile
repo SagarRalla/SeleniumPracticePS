@@ -1,29 +1,19 @@
 pipeline {
-    agent any   // Runs on any available Jenkins agent
+    agent any
 
     tools {
-        maven 'Maven3'   
-        jdk 'Java17'     
+        maven 'Maven3'
     }
 
     stages {
-        stage('Checkout') {
-            steps {
-                echo "Checking out code from GitHub..."
-                checkout scm
-            }
-        }
-
         stage('Build') {
             steps {
-                echo "Building project with Maven..."
-                bat 'mvn clean compile'
+                bat 'mvn clean install'
             }
         }
-
-        stage('Run Tests') {
+        stage('Test') {
             steps {
-                echo "Running TestNG/Selenium tests..."
+                // Run your tests
                 bat 'mvn test'
             }
         }
@@ -31,8 +21,20 @@ pipeline {
 
     post {
         always {
-            echo "Publishing test reports..."
-            junit '**/target/surefire-reports/*.xml'  // Publishes TestNG/JUnit reports
+            // Publish test results
+            junit '**/target/surefire-reports/*.xml'
+
+            // Send email
+            emailext (
+                subject: "Jenkins Build: ${currentBuild.fullDisplayName}",
+                body: """Build Status: ${currentBuild.currentResult}
+                        Project: ${env.JOB_NAME}
+                        Build Number: ${env.BUILD_NUMBER}
+                        Check console output at: ${env.BUILD_URL}""",
+                to: "recipient@example.com",
+                attachLog: true
+            )
         }
     }
 }
+

@@ -8,7 +8,11 @@
     <classes>
       <class name="com.optum.rxcomet.tests.ImplementationTest">
         <methods>
+          <include name="endReport"/>
+          <include name="quitBrowser"/>
           <include name="headerTest"/>
+          <include name="setup"/>
+          <include name="reportSetup"/>
         </methods>
       </class> <!-- com.optum.rxcomet.tests.ImplementationTest -->
     </classes>
